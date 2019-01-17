@@ -2,18 +2,23 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>初夏博客</title>
+<title>FLASK 开启跨域 - 初夏博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="初夏博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="FLASK 开启跨域">
+<meta name="keywords" content="python,flask">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FLASK 开启跨域">
+<meta property="og:url" content="http://yoursite.com/2019/01/17/FLASK-开启跨域/index.html">
 <meta property="og:site_name" content="初夏博客">
+<meta property="og:description" content="FLASK 开启跨域">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-17T07:43:12.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初夏博客">
+<meta name="twitter:title" content="FLASK 开启跨域">
+<meta name="twitter:description" content="FLASK 开启跨域">
 
 
 
@@ -75,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://puui.qpic.cn/fans_admin/0/1_1254372650_1547709660538/0" alt="初夏博客" height="28">
+                <img src="https://puui.qpic.cn/fans_admin/0/1_1254372650_1547709660538/0" alt="FLASK 开启跨域" height="28">
             
             </a>
         </div>
@@ -83,7 +88,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active" href="/">Home</a>
+                <a class="navbar-item" href="/">Home</a>
                 
                 <a class="navbar-item" href="/archives">Archives</a>
                 
@@ -120,8 +125,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    <div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -145,59 +149,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/01/17/FLASK-开启跨域/">FLASK 开启跨域</a>
+                FLASK 开启跨域
             
         </h1>
         <div class="content">
-            <p>FLASK 开启跨域<br></p>
+            <p>FLASK 开启跨域<br><a id="more"></a><br>Access-Control-Allow-Method 和 Access-Control-Allow-Origin 分别告知客户端，服务器允许客户端用于跨域的方法和域名</p>
+<h2 id="下载-flask-cors-包"><a href="#下载-flask-cors-包" class="headerlink" title="下载 flask_cors 包"></a>下载 flask_cors 包</h2><pre><code>pip install flask-cors
+</code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><pre><code>from flask_cors import *
+app = Flask(__name__)
+CORS(app, supports_credentials=True)
+</code></pre><h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="http://flask-cors.readthedocs.io/en/latest/" target="_blank" rel="noopener">官方文档</a></p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/01/17/FLASK-开启跨域/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/flask/">flask</a>, <a class="has-link-grey -link" href="/tags/python/">python</a>
                 </div>
             </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-01-17T03:11:51.000Z">2019-01-17</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 读完 (大约 56 个字)
-                </span>
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/01/17/有关使用-Hexo-和-GitHub-搭建博客，出现-hexo-d-报错如何解决？/">有关使用 Hexo 和 GitHub 搭建博客，出现 hexo -d 报错如何解决？</a>
-            
-        </h1>
-        <div class="content">
-            <p>这个问题是这样解决的第一删除你hexo 下面的.deploy_git文件夹第二 运行 <img src="https://pic4.zhimg.com/e47f3789974334661cf9c5206bdfd477_b.png" data-rawwidth="309" data-rawheight="62" class="content_image" width="309">第三 重新 hexo clean               hexo g               hexo d第四   打开自己的网址，进行验证是否成功</p>
-
         </div>
         
         
@@ -207,66 +178,50 @@
 
 
 
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2018/12/14/typecho-外链跳转代码/" class="image is-7by1">
-            <img class="thumbnail" src="/images/239838569.png" alt="typecho 外链跳转代码">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-12-14T05:17:00.000Z">2018-12-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/分类1/">分类1</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 743 个字)
-                </span>
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
             
-                <a class="has-link-black-ter" href="/2018/12/14/typecho-外链跳转代码/">typecho 外链跳转代码</a>
-            
-        </h1>
-        <div class="content">
-            <p>typecho 外链跳转代码<br></p>
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="https://github.com" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="https://github.com" alt="微信"></div>
+</a>
+
+                
         </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2018/12/14/typecho-外链跳转代码/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
     </div>
 </div>
 
 
 
-
-
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/01/17/有关使用-Hexo-和-GitHub-搭建博客，出现-hexo-d-报错如何解决？/">
+                <span class="level-item">有关使用 Hexo 和 GitHub 搭建博客，出现 hexo -d 报错如何解决？</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -706,7 +661,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="https://puui.qpic.cn/fans_admin/0/1_1254372650_1547709660538/0" alt="初夏博客" height="28">
+                    <img src="https://puui.qpic.cn/fans_admin/0/1_1254372650_1547709660538/0" alt="FLASK 开启跨域" height="28">
                 
                 </a>
                 <p class="is-size-7">
